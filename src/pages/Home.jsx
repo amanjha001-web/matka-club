@@ -1,3 +1,4 @@
+
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 
@@ -9,7 +10,7 @@ import Download from "../sections/Download/Download";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-[#080808] text-white">
+    <div className="min-h-screen bg-[#070b14] text-white selection:bg-blue-600 selection:text-white">
       <Navbar />
 
       <main>
