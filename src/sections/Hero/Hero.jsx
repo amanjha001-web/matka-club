@@ -8,7 +8,19 @@ function Hero() {
     <section className="relative isolate overflow-hidden bg-[#070b14]">
       {/* ================= BACKGROUND GLOW ================= */}
       <div className="pointer-events-none absolute -right-40 top-10 h-[350px] w-[350px] rounded-full bg-blue-600/10 blur-[120px] sm:h-[450px] sm:w-[450px] lg:-right-40 lg:top-20 lg:h-[500px] lg:w-[500px]" />
+      
+      {/* ================= INFINITE DASHED BACKGROUND DESIGN ================= */}
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+        {/* Large rotating dashed circle */}
+        <div className="absolute -right-40 top-1/2 h-[650px] w-[650px] -translate-y-1/2 animate-[spin_90s_linear_infinite] rounded-full border border-dashed border-blue-500/10 sm:-right-64 sm:h-[850px] sm:w-[850px] lg:-right-40 lg:h-[1000px] lg:w-[1000px]" />
 
+        {/* Inner dashed circle - opposite direction */}
+        <div className="absolute -right-20 top-1/2 h-[450px] w-[450px] -translate-y-1/2 animate-[spin_65s_linear_infinite_reverse] rounded-full border border-dashed border-indigo-400/10 sm:-right-32 sm:h-[600px] sm:w-[600px] lg:-right-10 lg:h-[750px] lg:w-[750px]" />
+
+        {/* Subtle animated dashed grid */}
+        <div className="absolute inset-0 animate-[dashDrift_30s_linear_infinite] opacity-[0.12] [background-image:radial-gradient(#3b82f6_0.7px,transparent_0.7px)] [background-size:24px_24px]" />
+      </div>
+      
       <Container>
         <div
           className="
@@ -174,13 +186,11 @@ function Hero() {
                   lg:shadow-[0_0_80px_rgba(37,99,235,0.3)]
                 "
               >
-                
                 <img
                   src={logo}
                   alt="Matka Club"
                   className="block h-full w-full scale-[0.85] object-contain"
                 />
-                
               </div>
             </div>
 

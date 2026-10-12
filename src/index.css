@@ -68,3 +68,14 @@ button {
     transform: translateX(130%) skewX(-20deg);
   }
 }
+
+
+@keyframes dashDrift {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 48px 48px;
+  }
+}
